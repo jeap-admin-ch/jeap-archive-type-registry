@@ -1,0 +1,19 @@
+{
+  "archiveType": "ProcessSnapshot",
+  "system": "JEAP",
+  "referenceIdType": "ch.admin.bit.jeap.audit.type.ProcessInstanceArtifact",
+  "description": "Snapshot of a process instance tracked by a jEAP Process Context Service instance",
+  "documentationUrl": "https://confluence.bit.admin.ch/display/JEAP/Process+Context+Service",
+  "expirationDays": 1825,
+  "versions": [
+    {
+      "version": 1,
+      "schema": "ProcessSnapshot_v1.avdl"
+    },
+    {
+      "version": 2,
+      "schema": "ProcessSnapshot_v2.avdl",
+      "compatibilityMode": "FULL"
+    }
+  ]
+}
