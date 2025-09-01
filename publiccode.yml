@@ -1,0 +1,33 @@
+publiccodeYmlVersion: 0.4.0
+name: jeap-archive-type-registry
+applicationSuite: jEAP
+softwareVersion: 1.0.0
+releaseDate: 2025-09-01
+url: "https://github.com/jeap-admin-ch/jeap-archive-type-registry.git"
+landingURL: "https://github.com/jeap-admin-ch/jeap"
+platforms:
+  - web
+categories:
+  - application-development
+developmentStatus: stable
+softwareType: library
+description:
+  en:
+    localisedName: jeap-archive-type-registry
+    shortDescription: Archive type registry containing jEAP archive types produced or consumed by jEAP services / libraries.
+    longDescription: >
+      This archive type registry contains definitions of jEAP archive types produced or consumed by jEAP services / 
+      libraries. This is used for example by the jEAP Process Archive Service and the jEAP Process Context Service.
+    features:
+      - Archive type definitions for jEAP services and libraries
+legal:
+  license: Apache-2.0
+maintenance:
+  type: internal
+  contacts:
+    - name: Federal Office of Information Technology, Systems and Telecommunication FOITT
+      email: jeap-community@bit.admin.ch
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en
