@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <url>https://github.com/jeap-admin-ch/jeap-archive-type-registry/tree/main</url>
+    <scm>
+        <url>https://github.com/jeap-admin-ch/jeap-archive-type-registry.git</url>
+    </scm>
+    <developers>
+        <developer>
+            <name>BIT</name>
+            <organization>Federal Office of Information Technology, Systems and Telecommunication FOITT</organization>
+            <organizationUrl>https://www.bit.admin.ch/</organizationUrl>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
 
     <parent>
         <groupId>ch.admin.bit.jeap</groupId>
@@ -11,11 +29,12 @@
 
     <groupId>ch.admin.bit.jeap</groupId>
     <artifactId>jeap-archive-type-registry</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <properties>
-        <jeap-process-archive-service.version>9.0.0</jeap-process-archive-service.version> <!-- TODO -->
+        <jeap-process-archive-service.version>9.0.0</jeap-process-archive-service.version>
         <jeap.archivetypes.compile.skip>false</jeap.archivetypes.compile.skip>
         <maven.deploy.skip>true</maven.deploy.skip>
         <java.version>21</java.version>
@@ -24,6 +43,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.honton.chas</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>ch.admin.bit.jeap</groupId>
                 <artifactId>jeap-process-archive-type-registry-maven-plugin</artifactId>
@@ -69,6 +98,7 @@
                             <trunkBranchName>main</trunkBranchName>
                             <enableDecimalLogicalType>true</enableDecimalLogicalType>
                             <skip>${jeap.archivetypes.compile.skip}</skip>
+                            <pomTemplateFile>archivetype.template.pom.xml</pomTemplateFile>
                         </configuration>
                     </execution>
                     <execution>
