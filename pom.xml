@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>ch.admin.bit.jme</groupId>
+    <groupId>ch.admin.bit.jeap</groupId>
     <artifactId>jeap-archive-type-registry</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -17,7 +17,6 @@
     <properties>
         <jeap-process-archive-service.version>9.0.0</jeap-process-archive-service.version> <!-- TODO -->
         <jeap.archivetypes.compile.skip>false</jeap.archivetypes.compile.skip>
-        <!-- Do not deploy the pom artifact for jme-archive-type-registry, this pom is only used to control the build -->
         <maven.deploy.skip>true</maven.deploy.skip>
         <java.version>21</java.version>
         <avro.version>1.12.0</avro.version>
@@ -66,7 +65,7 @@
                         <configuration>
                             <generateAllArchiveTypes>true</generateAllArchiveTypes>
                             <gitUrl>https://bitbucket.bit.admin.ch/scm/jeap/jeap-archive-type-registry.git</gitUrl>
-                            <groupIdPrefix>ch.admin.bit.jme.archivetype</groupIdPrefix>
+                            <groupIdPrefix>ch.admin.bit.jeap.archivetype</groupIdPrefix>
                             <trunkBranchName>main</trunkBranchName>
                             <enableDecimalLogicalType>true</enableDecimalLogicalType>
                             <skip>${jeap.archivetypes.compile.skip}</skip>
