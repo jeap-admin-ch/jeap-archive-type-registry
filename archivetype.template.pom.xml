@@ -38,6 +38,9 @@
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jeap-central-publishing-maven-plugin.version>0.7.0.1</jeap-central-publishing-maven-plugin.version>
+        <maven-gpg-plugin.version>3.2.5</maven-gpg-plugin.version>
+        <maven-deploy-plugin.version>3.1.3</maven-deploy-plugin.version>
     </properties>
     <dependencies>
         <dependency>
