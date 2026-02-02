@@ -164,7 +164,7 @@
                                 <id>after-publish-validation-deploy</id>
                                 <phase>deploy</phase>
                                 <goals>
-                                    <goal>deploy</goal>
+                                    <goal>none</goal><!-- Re-enable after central publication -->
                                 </goals>
                                 <configuration>
                                     <deployAtEnd>true</deployAtEnd>

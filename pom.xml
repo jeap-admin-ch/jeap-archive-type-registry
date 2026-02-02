@@ -92,7 +92,7 @@
                             <goal>compile-archive-types</goal>
                         </goals>
                         <configuration>
-                            <generateAllArchiveTypes>false</generateAllArchiveTypes>
+                            <generateAllArchiveTypes>true</generateAllArchiveTypes>
                             <gitUrl>https://bitbucket.bit.admin.ch/scm/jeap/jeap-archive-type-registry.git</gitUrl>
                             <groupIdPrefix>ch.admin.bit.jeap.archivetype</groupIdPrefix>
                             <trunkBranchName>main</trunkBranchName>
