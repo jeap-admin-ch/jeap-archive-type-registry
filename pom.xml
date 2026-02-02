@@ -108,6 +108,8 @@
                         </goals>
                         <configuration>
                             <mavenDeployGoal>deploy</mavenDeployGoal>
+                            <trunkBranchName>main</trunkBranchName>
+                            <trunkMavenProfile>maven-central-publish</trunkMavenProfile>
                         </configuration>
                     </execution>
                 </executions>
