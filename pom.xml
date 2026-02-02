@@ -83,8 +83,7 @@
                 <version>${jeap-process-archive-service.version}</version>
                 <executions>
                     <execution>
-                        <!-- Disable default execution from parent -->
-                        <phase>none</phase>
+                        <phase>deploy</phase>
                     </execution>
                     <execution>
                         <id>compile-archive-types</id>
@@ -92,7 +91,7 @@
                             <goal>compile-archive-types</goal>
                         </goals>
                         <configuration>
-                            <generateAllArchiveTypes>true</generateAllArchiveTypes>
+                            <generateAllArchiveTypes>false</generateAllArchiveTypes>
                             <gitUrl>https://bitbucket.bit.admin.ch/scm/jeap/jeap-archive-type-registry.git</gitUrl>
                             <groupIdPrefix>ch.admin.bit.jeap.archivetype</groupIdPrefix>
                             <trunkBranchName>main</trunkBranchName>
